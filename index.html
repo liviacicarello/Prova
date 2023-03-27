@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Armazenamento de Sistemas de Peças</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+        <span>Armazenamento de Sistemas de Peças</span>
+        <button onclick="openModal()" id="new">Adicionar</i></button>
+      </div>
+  
+      <div class="divTable">
+        <table>
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Nome</th>
+              <th>Fabricante</th>
+              <th>Descrição</th>
+              <th>Quantidade</th>
+              <th class="acao">Editar</th>
+              <th class="acao">Deletar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>DSS22F</td>
+                <td>Manômetro</td>
+                <td>WIKA</td>
+                <td>Medição higiênica de pressão em aplicações sanitárias para a indústria alimentícia e de bebidas</td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>THM10</td>
+                <td>Termomanômetro bimetálico</td>
+                <td>WIKA</td>
+                <td>Versão ecológica, para medição de pressão e temperatura</td>
+            
+                </td>
+            </tr>
+
+          </tbody>
+
+        </table>
+      </div>
+  
+      <div class="modal-container">
+        <div class="modal">
+          <form>
+            <label for="m-codigo">Codigo</label>
+            <input id="m-codigo" type="text" required />
+
+            <label for="m-nome">Nome</label>
+            <input id="m-nome" type="text" required />
+    
+            <label for="m-fabricante">Fabricante</label>
+            <input id="m-fabricante" type="text" required />
+    
+            <label for="m-descricao">Descrição</label>
+            <input id="m-descricao" type="text" required />
+
+            <label for="m-quantidade">Quantidade</label>
+            <input id="m-qauntidade" type="number" required />
+            <button id="btnSalvar">Salvar</button>
+          </form>
+        </div>
+      </div>
+  
+    </div>
+    <script src="script.js"></script>
+  </body>
+  
+  </html>
